@@ -30,7 +30,7 @@ public class MinimumDominoRotationsForEqualRows {
     System.out.println(min(a, b));
   }
 
-  static int min(int[] tops, int[] bottoms){
+  private static int min(int[] tops, int[] bottoms){
     int min = -1;
     min = traverseAndGetMin(tops, bottoms,  tops[0], min);
     if(tops[0] != bottoms[0]){
@@ -40,7 +40,7 @@ public class MinimumDominoRotationsForEqualRows {
     return min;
   }
 
-  static int traverseAndGetMin(int[] tops, int[] bottoms, int common, int min){
+  private static int traverseAndGetMin(int[] tops, int[] bottoms, int common, int min){
     int tCount = 0;
     int bCount = 0;
 
@@ -60,7 +60,7 @@ public class MinimumDominoRotationsForEqualRows {
     return min;
   }
 
-  static int getMin(int count, int min, int length){
+  private static int getMin(int count, int min, int length){
     if(count != 0) {
       count = Math.min(count, length - count);
       min = min != -1 ? Math.min(min, count) : count;

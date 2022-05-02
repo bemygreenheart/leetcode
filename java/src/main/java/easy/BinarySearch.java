@@ -33,7 +33,7 @@ public class BinarySearch {
     System.out.println(solution(nums, target));
   }
 
-  public static int solution(int[] nums, int target){
+  private static int solution(int[] nums, int target){
     int middle = -1;
     int start = 0;
     int end = nums.length;

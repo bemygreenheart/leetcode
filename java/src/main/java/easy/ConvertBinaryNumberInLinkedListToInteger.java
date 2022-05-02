@@ -13,7 +13,7 @@ public class ConvertBinaryNumberInLinkedListToInteger {
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
-    public int getDecimalValue(ListNode head) {
+    private int getDecimalValue(ListNode head) {
       int sum = 0;
       for(ListNode node = head; node != null; node = node.next){
         sum = (sum << 1) + node.val;

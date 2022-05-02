@@ -15,7 +15,7 @@ public class MaximizeDistanceToClosestPerson {
     System.out.println(getDistance(d));
   }
 
-  public static int getDistance(int[] seats){
+  private static int getDistance(int[] seats){
     int max = 1;
     int count = 0;
     int start = -1;

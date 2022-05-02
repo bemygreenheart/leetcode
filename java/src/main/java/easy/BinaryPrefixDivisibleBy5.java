@@ -25,7 +25,7 @@ public class BinaryPrefixDivisibleBy5 {
     System.out.println(solution(nums));
   }
 
-  public static List<Boolean> solution(int[] nums){
+  private static List<Boolean> solution(int[] nums){
     List<Boolean> result = new ArrayList<>(nums.length);
     int sum = 0;
 
